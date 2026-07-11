@@ -2,22 +2,23 @@
 	"name": "lanzou-link-resolve-worker",
 	"version": "1.1.0",
 	"scripts": {
-		"deploy": "wrangler deploy --dry-run --minify --outdir ./dist",
+		"build": "wrangler deploy --dry-run --minify --outdir ./dist",
+		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
 		"test": "vitest",
 		"cf-typegen": "wrangler types"
 	},
 	"dependencies": {
-		"cheerio": "^1.1.2",
-		"marked": "^16.1.1"
+		"cheerio": "^1.2.0",
+		"marked": "^18.0.6"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.8.58",
-		"@cloudflare/workers-types": "^4.20250730.0",
-		"typescript": "^5.8.3",
-		"vitest": "~3.2.4",
-		"wrangler": "^4.26.1"
+		"@cloudflare/vitest-pool-workers": "^0.18.4",
+		"@cloudflare/workers-types": "^5.20260711.1",
+		"typescript": "^7.0.2",
+		"vitest": "^4.1.10",
+		"wrangler": "^4.110.0"
 	},
-	"packageManager": "yarn@4.12.0"
+	"packageManager": "yarn@4.17.1"
 }
